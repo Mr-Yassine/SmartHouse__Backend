@@ -35,7 +35,7 @@ jobs:
             username: ${{ secrets.DOCKER_USERNAME }}
             password: ${{ secrets.DOCKER_PASSWORD }}
 
-  - uses: gonuit/heroku-docker-deploy@v1.3.3 # GitHub action name (leave it as it is).
+    - uses: gonuit/heroku-docker-deploy@v1.3.3 # GitHub action name (leave it as it is).
       name: build and deploy to heroku
       with:
         # Below you must provide variables for your Heroku app.
